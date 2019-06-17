@@ -52,6 +52,7 @@ class App extends React.Component {
       <div>
         <h1>Mike Janes IEL Calculator</h1>
         <Result answer={this.state.answer} />
+
         <Keypad onClick={this.onClick} />
       </div>
     );

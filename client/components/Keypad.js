@@ -16,18 +16,15 @@ export default class Keypad extends Component {
         <button key={x} name={i} onClick={e => this.props.onClick(e.target.name)}>{i}</button>
       </span>
     )
-    const final = buttons
-    const formatted = final.map((j, k) => {
-      if ((k + 1) % 5 === 0) {
-        final.splice(k, 0, <br />)
-      }
-      if (k === 16) {
-        final.splice(19, 0, <br />)
-      }
+    const formatted = buttons.map((j, k) => {
+      //puts a break at every 4th key
+      (((k + 1) % 5 === 0) ? buttons.splice(k, 0, <br />) : null);
+      //puts a break at the last 2 keys
+      ((k === 16) ? buttons.splice(19, 0, <br />) : null)
     })
 
     return (
-      <div> {final}</div >
+      <div> {buttons}</div >
     )
   }
 }
