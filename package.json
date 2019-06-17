@@ -1,7 +1,7 @@
 {
   "name": "webpack",
   "version": "1.0.0",
-  "description": "A dope webpack boilerplate",
+  "description": "Calculator app",
   "main": "index.js",
   "scripts": {
     "watch": "rimraf dist && webpack --watch",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "none yet"
   },
-  "author": "James Dempsey",
+  "author": "Mike Janes",
   "license": "UNLICENSED",
   "dependencies": {
     "axios": "^0.18.0",
